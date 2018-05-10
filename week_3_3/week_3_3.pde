@@ -29,7 +29,6 @@ void setup() {
 
 void draw() {
   background(bgc);
-  text("This is my first text",10,10);
   for (int i=0; i<totalRects; i++) {
     fill(c[i]);
     noStroke();
@@ -41,6 +40,8 @@ void draw() {
     }
     c[i] = makeColor();
   }
+  fill(255);
+  text("This is my first text",10,30);
 }
 
 float makeRandomPos() {
